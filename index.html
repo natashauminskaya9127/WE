@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -231,6 +232,20 @@
       color: #96908a;
     }
 
+    /* ---------- НАДПИСЬ ПОД ПЛЕЕРОМ ---------- */
+
+    .message {
+      margin-top: 34px;
+
+      font-size: 15px;
+      font-weight: 300;
+      letter-spacing: 0.03em;
+
+      color: #f5f1eb;
+
+      opacity: 0.9;
+    }
+
 
     /* ---------- АНИМАЦИИ ---------- */
 
@@ -266,6 +281,10 @@
       .cover {
         width: 75vw;
         height: 75vw;
+      }
+
+      .message {
+        font-size: 14px;
       }
     }
   </style>
@@ -315,13 +334,14 @@
 
     <section class="song-screen" id="songScreen">
 
-      <!-- Замени cover.jpg на свою картинку -->
+      <!-- Обложка -->
       <img
         src="cover.jpg"
         class="cover"
         alt=""
       >
 
+      <!-- Кнопка Play -->
       <button
         class="play-button"
         id="playButton"
@@ -331,6 +351,7 @@
         ▶
       </button>
 
+      <!-- Прогресс -->
       <div
         class="progress-container"
         onclick="changeProgress(event)"
@@ -343,6 +364,11 @@
           <span id="currentTime">0:00</span>
           <span id="duration">0:00</span>
         </div>
+      </div>
+
+      <!-- Надпись -->
+      <div class="message">
+        Я всегда рядом с тобой
       </div>
 
     </section>
@@ -556,4 +582,5 @@
   </script>
 
 </body>
-</html> 
+</html>
+```
